@@ -1,0 +1,62 @@
+@media screen and (max-width: 1030px) {
+    .left{
+        width: 98vw;
+    }
+    .right{
+        width: 98vw;
+        height: 110vh;
+    }
+}
+@media screen and (max-width: 999px) {
+    .place{
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 749px) {
+    .place{
+        width: 95vw;
+    }
+}
+@media (height: 1180px) and (width: 820px) {
+    .place{
+        width: 95vw;
+    }
+}
+@media (height: 1366px) and (width: 1024px) {
+    .place{
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 515px) {
+    .right{
+        padding: 20px 15px;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .left .my_searchbar input{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 440px) {
+    .left{
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        height: 150vh;
+    }
+}
+@media screen and (max-width: 315px) {
+    .right{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        height: 150vh;
+    }
+}
+@media screen and (max-width: 290px) {
+    .right{
+        height: 190vh;
+    }
+}

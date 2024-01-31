@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/responsivenes.css">
+</head>
+
+<body>
+
+    <div class="nav2">
+        <nav class="navbar navbar-expand-lg nav-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Weather App</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="https://rapidapi.com/weatherapi/api/weatherapi-com/details">About</a>
+                        <a class="nav-link" href="https://rapidapi.com/user/weatherapi">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="my_container">
+        <div class="left">
+            <div class="my_searchbar">
+                <input type="search" name="searchvalue" id="search" placeholder="Enter city name...">
+                <img src="img/search.svg" alt="search" height="24px" width="24px">
+            </div>
+            <div class="image">
+                <img src="" alt="weather image" width="200px">
+            </div>
+            <div class="temp">
+                <p class="temp-celsius"></p>
+            </div>
+            <div class="condition">
+                <h4></h4>
+            </div>
+            <hr>
+            <div class="date">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="city">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="right">
+            <div class="my-box">
+                <p>Humidity</p>
+                <p class="main"></p>
+            </div>
+            <div class="my-box">
+                <p>Feels Like</p>
+                <p class="main"></p>
+            </div>
+            <div class="my-box">
+                <p>Chance of rain</p>
+                <p class="main"></p>
+            </div>
+            <div class="my-box">
+                <p>Pressure</p>
+                <p class="main"></p>
+            </div>
+            <div class="my-box">
+                <p>UV Index</p>
+                <p class="main"></p>
+            </div>
+            <div class="my-box">
+                <p>Visibility</p>
+                <p class="main"></p>
+            </div>
+            <div class="my-box">
+                <p>Wind</p>
+                <p class="main"></p>
+                <p></p>
+            </div>
+            <div class="my-box">
+                <p>Temperature</p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="my-box">
+                <p>Sun</p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-places-heading">
+        <h2>Weather of other common places</h2>
+    </div>
+    <div class="other-places">
+        <div class="place">
+            <div class="other-image">
+                <img src="" alt="weather image" width="200px">
+            </div>
+            <div class="other-temp">
+                <p></p>
+            </div>
+            <div class="other-condition">
+                <h4></h4>
+            </div>
+            <hr>
+            <div class="other-date">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="other-city">
+                <h3>Mumbai, India</h3>
+            </div>
+        </div>
+        <div class="place">
+            <div class="other-image">
+                <img src="" alt="weather image" width="200px">
+            </div>
+            <div class="other-temp">
+                <p></p>
+            </div>
+            <div class="other-condition">
+                <h4></h4>
+            </div>
+            <hr>
+            <div class="other-date">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="other-city">
+                <h3>New Delhi, India</h3>
+            </div>
+        </div>
+        <div class="place">
+            <div class="other-image">
+                <img src="" alt="weather image" width="200px">
+            </div>
+            <div class="other-temp">
+                <p></p>
+            </div>
+            <div class="other-condition">
+                <h4></h4>
+            </div>
+            <hr>
+            <div class="other-date">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="other-city">
+                <h3>Bangalore, India</h3>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; <a href="https://weather.com/legal">Weather.com</a></p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
