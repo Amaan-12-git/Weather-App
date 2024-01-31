@@ -59,6 +59,8 @@ const other = async () =>{
   let mumbai_text = mumbai_object.current.condition.text;
   if(mumbai_text == "Moderate or heavy snow in area with thunder")
   mumbai_text = "Snow and Thunder";
+  else if(mumbai_text == "Moderate or heavy rain with thunder")
+  mumbai_text = "Rain and Thunder";
   document.getElementsByClassName("other-condition")[0].getElementsByTagName("h4")[0].innerHTML = mumbai_text;
   
   mumbai_text = mumbai_text.trim();
@@ -92,6 +94,8 @@ const other = async () =>{
   let new_delhi_text = new_delhi_object.current.condition.text;
   if(new_delhi_text == "Moderate or heavy snow in area with thunder")
   new_delhi_text = "Snow and Thunder";
+  else if(new_delhi_text == "Moderate or heavy rain with thunder")
+  new_delhi_text = "Rain and Thunder"
   document.getElementsByClassName("other-condition")[1].getElementsByTagName("h4")[0].innerHTML = new_delhi_text;
   
   new_delhi_text = new_delhi_text.trim();
@@ -115,6 +119,8 @@ const other = async () =>{
   let bangalore_text = bangalore_object.current.condition.text;
   if(bangalore_text == "Moderate or heavy snow in area with thunder")
   bangalore_text = "Snow and Thunder";
+  else if(bangalore_text == "Moderate or heavy rain with thunder")
+  bangalore_text = "Rain and Thunder"
   document.getElementsByClassName("other-condition")[2].getElementsByTagName("h4")[0].innerHTML = bangalore_text;
   
   bangalore_text = bangalore_text.trim();
@@ -152,6 +158,8 @@ const main = async (city_name = "Kanpur") => {
   let text = weather_object.current.condition.text;
   if(text == "Moderate or heavy snow in area with thunder")
   text = "Snow and Thunder";
+  else if(text == "Moderate or heavy rain with thunder")
+  text = "Rain and Thunder"
   document.querySelector(".condition").getElementsByTagName("h4")[0].innerHTML = text;
   
   text = text.trim();
@@ -163,7 +171,7 @@ const main = async (city_name = "Kanpur") => {
   else if(text.toLowerCase().includes("snow") == true && text.toLowerCase().includes("thunder") == false)
   {img_src = `/img/snow`;}
 
-  let data = await fetch(`http://127.0.0.1:5501/img`);
+  let data = await fetch(`/img`);
   let response_img = await data.text();
   let div = document.createElement("div");
   div.innerHTML = response_img;
