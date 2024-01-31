@@ -171,7 +171,7 @@ const main = async (city_name = "Kanpur") => {
   else if(text.toLowerCase().includes("snow") == true && text.toLowerCase().includes("thunder") == false)
   {img_src = `/img/snow`;}
 
-  let data = await fetch(`/img`);
+  let data = await fetch(`Weather-App/img`);
   let response_img = await data.text();
   let div = document.createElement("div");
   div.innerHTML = response_img;
